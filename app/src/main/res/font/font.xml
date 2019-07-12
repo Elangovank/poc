@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <font
+        android:font="@font/ubuntu_bold"
+        tools:targetApi="o" />
+    <font android:font="@font/ubuntu_medium"
+        tools:targetApi="o" />
+    <font android:font="@font/ubuntu_light"
+        tools:targetApi="o" />
+
+    <font
+        android:font="@font/ubuntu_medium"
+        tools:targetApi="o" />
+
+    <font
+        android:font="@font/ubuntu_regular"
+        tools:targetApi="o" />
+
+    <font
+        android:font="@font/sf_pro_text_regular"
+        tools:targetApi="o" />
+
+    <font
+        android:font="@font/sf_pro_text_light"
+        tools:targetApi="o" />
+
+    <font
+        android:font="@font/sf_pro_text_semibold"
+        tools:targetApi="o" />
+
+    <font
+        android:font="@font/reality_sunday_light"
+        tools:targetApi="o" />
+
+
+</font-family>

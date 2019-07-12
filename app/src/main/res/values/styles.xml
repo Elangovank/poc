@@ -1,0 +1,307 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="MyTextViewStyle_Heading_white" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/font_title</item>
+    </style>
+
+    <style name="MyTextViewStyle_Heading_black" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/font_title</item>
+        <item name="android:fontFamily">@font/ubuntu_medium</item>
+    </style>
+
+
+    <style name="MyTextViewStyle_description_black" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/font_second_title</item>
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+    </style>
+
+    <style name="MyButtonStyle_white" parent="android:Widget.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/font_title</item>
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+    </style>
+
+    <dimen name="text_heading">20sp</dimen>
+
+    <style name="sky_heading_large_TXT">
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+        <item name="android:textColor">@color/skyra_white</item>
+        <item name="android:textSize">@dimen/font_title_big</item>
+    </style>
+
+    <style name="sky_heading_large_EDT">
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textColor">@color/skyra_white</item>
+        <item name="android:textSize">@dimen/font_edittext</item>
+    </style>
+
+    <style name="sky_heading_large_EDT_black">
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/font_edittext</item>
+    </style>
+
+
+    <style name="sky_title_very_small">
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textColor">@color/skyra_white</item>
+        <item name="android:textSize">@dimen/font_list_item_small</item>
+    </style>
+
+    <style name="sky_title_small">
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textColor">@color/skyra_white</item>
+        <item name="android:textSize">@dimen/font_tab</item>
+    </style>
+
+
+    <style name="sky_button">
+        <item name="android:textColor">@color/skyra_black</item>
+        <item name="android:textSize">@dimen/font_button</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+        <item name="android:background">@drawable/bg_button_white</item>
+    </style>
+
+    <style name="sky_accept_button">
+        <item name="android:textColor">@color/skyra_black</item>
+        <item name="android:textSize">@dimen/font_button</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+        <item name="android:background">@drawable/bg_button_white</item>
+    </style>
+
+
+    <style name="sky_discover_title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/discover_title_font</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/reality_sunday_light</item>
+    </style>
+
+
+    <style name="sky_discover_subtitle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_list_title</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/ubuntu_light</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">@dimen/margin_20</item>
+    </style>
+
+
+    <style name="sky_settings_title">
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/font_tab</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+
+    <style name="sky_my_trips">
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="sky_discover_textView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="sky_discover_font_12" parent="@style/sky_discover_textView">
+        <item name="android:textSize">@dimen/font_12</item>
+    </style>
+
+    <style name="sky_discover_font_14" parent="@style/sky_discover_textView">
+        <item name="android:textSize">@dimen/font_tab</item>
+    </style>
+
+
+    <style name="MSV_ImageButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+
+    <style name="MSV_CloseImageButton">
+        <item name="android:layout_width">@dimen/icon_width</item>
+        <item name="android:layout_height">@dimen/icon_height</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="MSV_BackImageButton">
+        <item name="android:layout_width">@dimen/icon_width</item>
+        <item name="android:layout_height">@dimen/icon_height</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="sky_profile_name">
+        <item name="android:fontFamily">@font/reality_sunday_light</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="sky_profile_sub_title">
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+        <item name="android:textColor">@color/skyra_gray</item>
+        <item name="android:textSize">@dimen/font_edittext</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="sky_profile_list_title">
+        <item name="android:padding">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+        <item name="android:textColor">@color/skyra_black_light</item>
+        <item name="android:textSize">@dimen/font_list_item_medium</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="sky_profile_list_item">
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">@dimen/margin_5</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/font_list_item</item>
+    </style>
+
+
+    <style name="MyRadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+
+    </style>
+
+
+    <style name="MyAlertDialogTheme" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
+        <item name="windowFixedWidthMajor">90%</item>
+        <item name="windowFixedWidthMinor">90%</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="BottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="ProgressDialog" parent="Base.Theme.AppCompat.Dialog.Alert">
+        <item name="android:colorBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="SearchView" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_marginRight">@dimen/margin_10</item>
+        <item name="android:layout_marginLeft">@dimen/margin_10</item>
+        <item name="android:layout_marginTop">@dimen/margin_5</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/skyra_gray</item>
+        <item name="android:drawableLeft">@drawable/ic_s</item>
+        <item name="android:hint">@string/search</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:inputType">text</item>
+        <item name="android:background">@drawable/bg_search_view</item>
+    </style>
+
+    <style name="OverrideMultipleImageSelectTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="actionModeStyle">@style/OverrideCustomActionModeStyle</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="OverrideCustomActionModeStyle" parent="Base.Widget.AppCompat.ActionMode">
+        <item name="background">@color/colorPrimary</item>
+    </style>
+
+    <style name="datepicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/skyra_green</item>
+        <item name="colorPrimaryDark">@color/skyra_blue</item>
+    </style>
+
+    <!-- &lt;!&ndash; set the rounded drawable as background to your bottom sheet &ndash;&gt;
+     <style name="BottomSheet" parent="@style/Widget.Design.BottomSheet.Modal">
+         <infalte_add_friend name="android:background">@drawable/rounded_dialog</infalte_add_friend>
+     </style>
+
+     <style name="BaseBottomSheetDialog" parent="@style/Theme.Design.Light.BottomSheetDialog">
+         <infalte_add_friend name="android:windowIsFloating">false</infalte_add_friend>
+         <infalte_add_friend name="bottomSheetStyle">@style/BottomSheet</infalte_add_friend>
+     </style>
+
+     <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog" />-->
+
+    <style name="Button" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/round_button_style</item>
+    </style>
+
+    <style name="getOtp_Button" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/getotp_button_style</item>
+    </style>
+    <style name="CardWidgetStyle" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:background">#FFFFFF</item>
+        <item name="editTextStyle">@style/EditTextOverride</item>
+        <item name="android:editTextStyle">@style/EditTextOverride</item>
+    </style>
+
+    <style name="EditTextOverride" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textColorHint">@color/skyra_gray</item>
+    </style>
+
+    <style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
+
+    <string name="search">Search</string>
+</resources>

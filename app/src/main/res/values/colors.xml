@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4885ed</color>
+    <color name="colorPrimaryDark">#FFFFFFFF</color>
+    <color name="colorAccent">#2D5AA3</color>
+    <color name="blue">#4885ed</color>
+    <color name="hint_blue">#9DAED5</color>
+
+    <color name="grey">#969393</color>
+
+    <color name="red">#FF0000</color>
+    <color name="skyra_green">#1AA670</color>
+    <color name="skyra_blue">#1A97A6</color>
+    <color name="skyra_light_blue">#b0004a53</color>
+    <color name="skyra_gray">#BDBDBD</color>
+    <color name="skyra_gray_light">#E0E0E0</color>
+    <color name="skyra_milk_white">#F2F2F2</color>
+    <color name="skyra_black">#1B4145</color>
+    <color name="skyra_blue_dark">#1A28A6</color>
+    <color name="skyra_white">#FFFFFFFF</color>
+    <color name="skyra_light_white">#c6ffffff</color>
+    <color name="skyra_yellow">#FFD700</color>
+    <color name="skyra_black_light">#a8000000</color>
+    <color name="skyra_black_lite">#0D000000</color>
+
+    <color name="white">#ffffff</color>
+    <color name="app_color">#1A97A6</color>
+    <color name="black">#ff000000</color>
+    <color name="transparent_black">#ab000000</color>
+    <color name="light_gray">#FAFAFA</color>
+    <color name="transparent">#FFFFFF</color>
+    <color name="stroke_border_color">#8A000000</color>
+
+    <color name="color_dark_gray">#939393</color>
+    <color name="color_base_grey">#ffdfdfdf</color>
+    <color name="bg_light_grey_color">#EEEEEE</color>
+    <color name="bg_alpha">#EEEEEE</color>
+
+
+    <color name="dark_oriange">#FF7F00</color>
+    <color name="dark_grey">#6D6D6D</color>
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+    <array name="array_dot_active">
+        <item>@color/skyra_blue</item>
+        <item>@color/skyra_blue</item>
+        <item>@color/skyra_blue</item>
+        <item>@color/skyra_blue</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/light_gray</item>
+        <item>@color/light_gray</item>
+        <item>@color/light_gray</item>
+        <item>@color/light_gray</item>
+    </array>
+
+
+</resources>
+

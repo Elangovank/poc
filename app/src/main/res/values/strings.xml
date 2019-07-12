@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">POC App</string>
+    <string name="here_we_go">Dashboard</string>
+    <string name="server_unreach">Server Unreachable</string>
+    <string name="something">Something went to wrong!\nPlease try again later</string>
+    <string name="no_internet">No Internet Connection!</string>
+</resources>

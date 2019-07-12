@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="profile_width">75dp</dimen>
+    <dimen name="profile_height">75dp</dimen>
+
+    <!--Material font sizes-->
+    <dimen name="font_title_big">32sp</dimen>
+    <dimen name="font_title">20sp</dimen>
+    <dimen name="font_second_title">16sp</dimen>
+    <dimen name="font_edittext">16sp</dimen>
+    <dimen name="font_list_title">16sp</dimen>
+    <dimen name="font_tab">14sp</dimen>
+    <dimen name="font_button">14sp</dimen>
+    <dimen name="font_list_item">14sp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="font_list_item_small">10dp</dimen>
+    <dimen name="font_list_item_medium">12dp</dimen>
+    <dimen name="font_12">12sp</dimen>
+    <dimen name="font_15">15sp</dimen>
+    <dimen name="font_18">18sp</dimen>
+
+
+    <!--Margin-->
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_25">25dp</dimen>
+    <dimen name="margin16">16dp</dimen>
+    <dimen name="margin_50">40dp</dimen>
+
+
+    <!--Discover-->
+    <dimen name="discover_title_font">64sp</dimen>
+    <dimen name="discover_title_image">190dp</dimen>
+    <dimen name="discover_circle_profile_image">50dp</dimen>
+    <dimen name="discover_view_divider_height">0.5dp</dimen>
+
+    <dimen name="header_height">48dp</dimen>
+    <dimen name="body_text">16sp</dimen>
+    <dimen name="footer_text">16sp</dimen>
+    <dimen name="primary_heading">20sp</dimen>
+    <dimen name="invite_list_heading">30dp</dimen>
+
+    <dimen name="icon_width">24dp</dimen>
+    <dimen name="icon_height">24dp</dimen>
+
+
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="img_width_height">220dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+    <dimen name="slide_desc">16sp</dimen>
+    <dimen name="slide_title">30sp</dimen>
+    <dimen name="imageview_height">500dp</dimen>
+    <dimen name="imageview_width">300dp</dimen>
+
+</resources>
