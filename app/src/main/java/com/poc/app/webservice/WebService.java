@@ -1579,4 +1579,27 @@ public class WebService {
             e.printStackTrace();
         }
     }*/
+    public static void oderDetails(Context aContext, ResponseListener listener) {
+
+        try {
+            // Generating Req
+            RestClient client = new RestClient(aContext, Request.Method.POST, constructUrl(API.orderDetails), API.orderDetails.hashCode());
+            ArrayList<SKYProductDetails> myNewProductList = new ArrayList<>();
+            myNewProductList.addAll(CMRLPrefs.getAddCartDetails());
+            for (int i = 0; i < myNewProductList.size(); i++) {
+                client.addParam(String.format("order_lines[%s][offer_percentage]", i), String.valueOf(myNewProductList.get(i).data.offerPercentage));
+                client.addParam(String.format("order_lines[%s][quantity]", i), String.valueOf(myNewProductList.get(i).data.order_quantity));
+                client.addParam(String.format("order_lines[%s][actual_price]", i), myNewProductList.get(i).data.actualPrice);
+                client.addParam(String.format("order_lines[%s][barcode]", i), myNewProductList.get(i).data.barcode);
+                client.addParam("store_id", String.valueOf(myNewProductList.get(i).data.storeId));
+                client.addParam("dream_id", CMRLPrefs.getString(DREAM_ID, ""));
+                client.addParam(String.format("order_lines[%s][offer_price]", i), myNewProductList.get(i).data.offerPrice);
+                client.addParam(String.format("order_lines[%s][product_id]", i), String.valueOf(myNewProductList.get(i).data.id));
+            }
+            fillCommons(aContext, client);
+            client.execute(listener, SKYOrderDetails.class);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

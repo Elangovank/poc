@@ -26,7 +26,7 @@ import java.util.Locale;
  */
 
 public class AppDialogs {
-
+    private static Snackbar snackbar;
     private static ProgressDialog progress;
 
     public static void showProgressDialog(Context context) {
@@ -53,13 +53,34 @@ public class AppDialogs {
         progress = ProgressDialog.show(context, title, desc, true);
         progress.setCancelable(true);
     }
+    /**
+     * Show Snack Bar Message
+     *
+     * @param view View
+     * @param desc String
+     */
+    public static void showSnackbarAction(Context aContext, View view, String desc, final OkListener listener) {
+        snackbar = Snackbar.make(view, desc, Snackbar.LENGTH_LONG)
+                .setAction("Retry", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if (listener != null) {
+                            listener.postiveAction();
+                        }
+                    }
+                })
+                .setActionTextColor(aContext.getResources().getColor(R.color.skyra_blue));
+        snackbar.show();
+    }
 
 
     public static void hideProgressDialog() {
         if (progress != null)
             progress.dismiss();
     }
-
+    public interface OkListener {
+        void postiveAction();
+    }
 
     /**
      * Shows the soft keyboard

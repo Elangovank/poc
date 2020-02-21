@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.poc.app.R;
-
 import com.poc.app.constants.PrefConstants;
 import com.poc.app.fragmentmanager.APPFragmentManager;
 import com.poc.app.fragmentmanager.BaseFragment;
@@ -23,14 +22,16 @@ import com.poc.app.webservice.WebService;
 /**
  * A simple {@link Fragment} subclass.
  */
-public  class SKYHomeFragment extends BaseFragment implements ResponseListener, PrefConstants {
+public class SKYHomeFragment extends BaseFragment implements ResponseListener, PrefConstants {
 
+    View myEmail;
     public static String TAG = SKYHomeFragment.class.getSimpleName();
 
     FragmentActivity myContext = null;
     private APPFragmentManager myFragmentManager;
 
     ImageView myDreamImg, myExploreImg, myDiscoverImg;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -42,10 +43,25 @@ public  class SKYHomeFragment extends BaseFragment implements ResponseListener, 
         return view;
     }
 
+    private void login() {
+        if (checkInternet()) {
+
+            AppDialogs.showProgressDialog(myContext);
+            //WebService.login(myContext, "");
+        } else {
+            AppDialogs.OkListener okListener = new AppDialogs.OkListener() {
+                @Override
+                public void postiveAction() {
+
+                }
+            };
+            AppDialogs.showSnackbarAction(myContext, myEmail, getString(R.string.no_internet), okListener);
+        }
+    }
+
     public void init(View rootview) {
         setHasOptionsMenu(true);
         myContext = getActivity();
-
 
 
         myFragmentManager = new APPFragmentManager(myContext);
@@ -53,8 +69,6 @@ public  class SKYHomeFragment extends BaseFragment implements ResponseListener, 
         myExploreImg = rootview.findViewById(R.id.img_explore);
         myDiscoverImg = rootview.findViewById(R.id.img_discover);
     }
-
-
 
 
     @Override
@@ -102,7 +116,8 @@ public  class SKYHomeFragment extends BaseFragment implements ResponseListener, 
             if (response.requestType == WebService.API.notificationCount.hashCode()) {
                 if (response.isSuccess()) {
 
-                } else{}
+                } else {
+                }
 
             }
         } else
